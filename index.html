@@ -29,7 +29,9 @@
 
           <div class="search-cart-links">
          
-            <button><img src="images/Search.png" alt="facebook-icon" height="20"/></button>
+           <button onclick="document.getElementById('btnSearch').click()">
+              <span class="icon search"><img src="images/Search.png" alt="Search" /></span>
+          </button>
             <button id="open-cart-modal"><img src="images/Cart.png" alt="instagram-icon"  height="20"/></button>
           
         </div>
@@ -49,10 +51,10 @@
             delivered to a customer.
           </p>
         </div>
-        <div class="search-input">
-          <input placeholder="Search food you love" />
-          <button type="button" >Search</button>
-        </div>
+        <form class="searchbox" id="frmSearch" method="GET">
+            <input type="search" placeholder="Search food you love" name="txtSearch" required />
+            <button type="submit" id="btnSearch">Search</button>
+        </form>
       </div>
       <img src="images/cooking/cuate.svg" alt="a-boy-cooking" height="450" />
     </section>
