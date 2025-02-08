@@ -164,6 +164,7 @@ nav {
     
     margin-top: 4%;
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(4,1fr) ;
     gap: 3% 2% ;
 }
